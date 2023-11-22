@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Una pagina en la cual le vamos a permitir al usuario divertirse mediante un juego en el cual debe adivinar un número mágico."
+      content="Una pagina en la cual le vamos a permitir al usuario cargar tareas a una lista, de la misma forma eliminarlos."
     />
     <meta
       name="keywords"
-      content="numeros, numero mágico, adivinar, juego, diversion"
+      content="lista, tareas, lista de tareas, anotar, recordar"
     />
     <meta name="author" content="Facundo Alejo Herrera" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Número Mágico</title>
+    <title>Lista de Tareas</title>
   </head>
   <body>
     <header class="position-fixed w-100 z-3 card-shadow">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
           <a class="navbar-brand font-logo fs-3" href="./index.html"
-            >Número Mágico ✨</a
+            >Lista de Tareas 📒</a
           >
           <button
             class="navbar-toggler"
@@ -52,7 +52,42 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="pt-5">
+        <article class="colorBanner pt-4">
+            <div class="container text-center py-4">
+                <h1 class="text-light">Aquí estan tus tareas 🤓<h1>
+            </div>
+        </article>
+        <article class="border border-danger mt-3 text-center container">
+          <ol class="list-inline-item">
+            <li>Estudiar para rolling.</li>
+          </ol>
+        </article>
+      </section>
+      <section class="text-center container mt-3">
+        <article class="my-5 border border-success p-1">
+          <h3 class="text-bg-success">Agregar Tareas:</h3>
+          <form class="my-3">
+            <div>
+              <label for="agregar">Ingrese la nueva tarea:</label>
+              <input type="text" id="agregar" maxlength="30" minlength="3" required>
+            </div>
+          </form>
+          <button class="btn btn-outline-success">Agregar</button>
+        </article>
+        <article class="my-5 border border-danger p-1">
+          <h3 class="text-bg-danger">Eliminar Tareas:</h3>
+          <form class="my-2">
+            <div>
+              <label for="borrar">Ingrese la tarea:</label>
+              <input type="text" id="borrar" maxlength="30" minlength="3" required>
+            </div>
+          </form>
+          <button class="btn btn-outline-danger">Eliminar</button>
+        </article>
+      </section>
+    </main>
     <footer class="text-secondary fondoFooter">
       <div class="container py-4 text-center">
         <span class="text-light font-logo h4"

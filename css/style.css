@@ -8,6 +8,10 @@ main {
     flex-grow: 1;
 }
 
+.colorBanner {
+    background: rgb(255, 0, 132)
+}
+
 .fondoFooter {
     background: rgb(40, 40, 41);
 }
